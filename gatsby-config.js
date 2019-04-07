@@ -1,6 +1,6 @@
-const config = require('./data/SiteConfig')
+const config = require('./data/SiteConfig');
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -35,12 +35,12 @@ module.exports = {
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: true,
         excludedRoutes: [
-          "/*/*/comments",
-          "/yoast/**",
-          "/*/*/users",
-          "/*/users/me",
-          "/oembed/*"
-        ],
+          '/*/*/comments',
+          '/yoast/**',
+          '/*/*/users',
+          '/*/users/me',
+          '/oembed/*'
+        ]
       }
     },
     // {
@@ -85,4 +85,4 @@ module.exports = {
     },
     'gatsby-plugin-offline'
   ]
-}
+};
